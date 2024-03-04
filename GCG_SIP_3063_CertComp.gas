@@ -1,0 +1,947 @@
+Program.Sub.ScreenSU.Start
+gui.Form1..create
+gui.Form1..caption("Certificate of Compliance Information")
+gui.Form1..size(16245,9480)
+gui.Form1..minx(0)
+gui.Form1..miny(0)
+gui.Form1..position(0,0)
+gui.Form1..event(unload,Form1_Unload)
+gui.Form1..alwaysontop(False)
+gui.Form1..fontname("Arial")
+gui.Form1..fontsize(7)
+gui.Form1..forecolor(0)
+gui.Form1..fontstyle(,,,,)
+gui.Form1..BackColor(-2147483633)
+gui.Form1..controlbox(True)
+gui.Form1..maxbutton(False)
+gui.Form1..minbutton(False)
+gui.Form1..mousepointer(1)
+gui.Form1..moveable(True)
+gui.Form1..sizeable(False)
+gui.Form1..ShowInTaskBar(False)
+gui.Form1..titlebar(True)
+gui.Form1.lblSale.create(label,"Sales Order",True,1500,300,0,195,195,True,0,Arial,7,-2147483633,0)
+gui.Form1.lblSale.defaultvalue("")
+gui.Form1.lblSale.controlgroup(0)
+gui.Form1.txtSO.create(textbox,"",True,795,300,0,195,495,True,0,Arial,7,16777215,1)
+gui.Form1.txtSO.defaultvalue("")
+gui.Form1.txtSO.controlgroup(0)
+gui.Form1.lblPartDesc.create(label,"Part Description",True,1500,300,0,200,1050,True,0,Arial,7,-2147483633,0)
+gui.Form1.lblPartDesc.defaultvalue("")
+gui.Form1.lblPartDesc.controlgroup(0)
+gui.Form1.txtCust.create(textbox,"",True,2535,300,0,1155,495,True,0,Arial,7,16777215,1)
+gui.Form1.txtCust.defaultvalue("")
+gui.Form1.txtCust.controlgroup(0)
+gui.Form1.lblCust.create(label,"Customer Name",True,1500,300,0,1890,200,True,0,Arial,7,-2147483633,0)
+gui.Form1.lblCust.defaultvalue("")
+gui.Form1.lblCust.controlgroup(0)
+gui.Form1.lblPacking.create(label,"Packing List",True,825,300,0,3885,195,True,0,Arial,7,-2147483633,0)
+gui.Form1.lblPacking.defaultvalue("")
+gui.Form1.lblPacking.controlgroup(0)
+gui.Form1.txtPack.create(textbox,"",True,795,300,0,3885,495,True,0,Arial,7,16777215,1)
+gui.Form1.txtPack.defaultvalue("")
+gui.Form1.txtPack.controlgroup(0)
+gui.Form1.txtDesc.create(textbox,"",True,2640,300,0,195,1360,True,0,Arial,7,16777215,1)
+gui.Form1.txtDesc.defaultvalue("")
+gui.Form1.txtDesc.controlgroup(1)
+gui.Form1.lblPL.create(label,"PL Name",True,1005,300,0,3045,1050,True,0,Arial,7,-2147483633,0)
+gui.Form1.lblPL.defaultvalue("")
+gui.Form1.lblPL.controlgroup(0)
+gui.Form1.txtPLName.create(textbox,"",True,2640,300,0,3045,1360,True,0,Arial,7,16777215,1)
+gui.Form1.txtPLName.defaultvalue("")
+gui.Form1.txtPLName.controlgroup(1)
+gui.Form1.lblShip.create(label,"Ship Date",True,850,300,0,4935,200,True,0,Arial,7,-2147483633,0)
+gui.Form1.lblShip.defaultvalue("")
+gui.Form1.lblShip.controlgroup(0)
+gui.Form1.txtDate.create(textbox,"12/30/2015",True,960,300,0,4935,495,True,0,Arial,7,16777215,1)
+gui.Form1.txtDate.defaultvalue("")
+gui.Form1.txtDate.controlgroup(0)
+gui.Form1.lblSerial.create(label,"Serial Number",True,1500,300,0,5880,1050,True,0,Arial,7,-2147483633,0)
+gui.Form1.lblSerial.defaultvalue("")
+gui.Form1.lblSerial.controlgroup(0)
+gui.Form1.txtSerial.create(textbox,"",True,2355,300,0,5880,1360,True,0,Arial,7,16777215,1)
+gui.Form1.txtSerial.defaultvalue("")
+gui.Form1.txtSerial.controlgroup(1)
+gui.Form1.lblHeat.create(label,"Heat",True,1320,300,0,8400,1050,True,0,Arial,7,-2147483633,0)
+gui.Form1.lblHeat.defaultvalue("")
+gui.Form1.lblHeat.controlgroup(0)
+gui.Form1.txtHeat.create(textbox,"",True,1380,300,0,8400,1360,True,0,Arial,7,16777215,1)
+gui.Form1.txtHeat.defaultvalue("")
+gui.Form1.txtHeat.controlgroup(1)
+gui.Form1.lblQty.create(label,"Quantity",True,1500,300,0,14490,1050,True,0,Arial,7,-2147483633,0)
+gui.Form1.lblQty.defaultvalue("")
+gui.Form1.lblQty.controlgroup(0)
+gui.Form1.txtQuantity.create(textbox,"",True,1245,300,0,14490,1360,True,0,Arial,7,16777215,1)
+gui.Form1.txtQuantity.defaultvalue("")
+gui.Form1.txtQuantity.controlgroup(1)
+gui.Form1.lblUser1.create(label,"User 1",True,1500,300,0,6100,200,True,0,Arial,7,-2147483633,0)
+gui.Form1.lblUser1.defaultvalue("")
+gui.Form1.lblUser1.controlgroup(0)
+gui.Form1.txtUser1.create(textbox,"",True,2355,300,0,6100,495,True,0,Arial,7,16777215,1)
+gui.Form1.txtUser1.defaultvalue("")
+gui.Form1.txtUser1.controlgroup(0)
+gui.Form1.lblUser2.create(label,"User 2",True,1500,300,0,8610,200,True,0,Arial,7,-2147483633,0)
+gui.Form1.lblUser2.defaultvalue("")
+gui.Form1.lblUser2.controlgroup(0)
+gui.Form1.txtUser2.create(textbox,"",True,2355,300,0,8610,495,True,0,Arial,7,16777215,1)
+gui.Form1.txtUser2.defaultvalue("")
+gui.Form1.txtUser2.controlgroup(0)
+gui.Form1.lblUser3.create(label,"User 3",True,1500,300,0,11130,200,True,0,Arial,7,-2147483633,0)
+gui.Form1.lblUser3.defaultvalue("")
+gui.Form1.lblUser3.controlgroup(0)
+gui.Form1.txtUser3.create(textbox,"",True,2355,300,0,11130,495,True,0,Arial,7,16777215,1)
+gui.Form1.txtUser3.defaultvalue("")
+gui.Form1.txtUser3.controlgroup(0)
+gui.Form1.lblUser4.create(label,"User 4",True,1500,300,0,13650,200,True,0,Arial,7,-2147483633,0)
+gui.Form1.lblUser4.defaultvalue("")
+gui.Form1.lblUser4.controlgroup(0)
+gui.Form1.txtUser4.create(textbox,"",True,2355,300,0,13650,495,True,0,Arial,7,16777215,1)
+gui.Form1.txtUser4.defaultvalue("")
+gui.Form1.txtUser4.controlgroup(0)
+gui.Form1.lblInfo.create(label,"Additional Info",True,1500,300,0,10035,1050,True,0,Arial,7,-2147483633,0)
+gui.Form1.lblInfo.defaultvalue("")
+gui.Form1.lblInfo.controlgroup(0)
+gui.Form1.mltxtInfo.create(textboxm)
+gui.Form1.mltxtInfo.text("")
+gui.Form1.mltxtInfo.visible(True)
+gui.Form1.mltxtInfo.size(4200,825)
+gui.Form1.mltxtInfo.zorder(0)
+gui.Form1.mltxtInfo.position(10035,1365)
+gui.Form1.mltxtInfo.enabled(True)
+gui.Form1.mltxtInfo.borderstyle(1)
+gui.Form1.mltxtInfo.alignment(0)
+gui.Form1.mltxtInfo.fontname("Arial")
+gui.Form1.mltxtInfo.fontsize(7)
+gui.Form1.mltxtInfo.numericonly(0)
+gui.Form1.mltxtInfo.maxLength(0)
+gui.Form1.mltxtInfo.BackColor(16777215)
+gui.Form1.mltxtInfo.defaultvalue("")
+gui.Form1.mltxtInfo.controlgroup(1)
+gui.Form1.gsfgOrder.create(gsflexgrid)
+gui.Form1.gsfgOrder.FixedRows(0)
+gui.Form1.gsfgOrder.FixedCols(0)
+gui.Form1.gsfgOrder.visible(True)
+gui.Form1.gsfgOrder.size(15915,5460)
+gui.Form1.gsfgOrder.zorder(0)
+gui.Form1.gsfgOrder.position(135,2880)
+gui.Form1.gsfgOrder.enabled(True)
+gui.Form1.gsfgOrder.event(mousedown,gsfgOrder_MouseDown)
+gui.Form1.cmdUpdate.create(button)
+gui.Form1.cmdUpdate.caption("Update")
+gui.Form1.cmdUpdate.visible(True)
+gui.Form1.cmdUpdate.size(1125,345)
+gui.Form1.cmdUpdate.zorder(0)
+gui.Form1.cmdUpdate.position(200,2340)
+gui.Form1.cmdUpdate.enabled(True)
+gui.Form1.cmdUpdate.fontname("Arial")
+gui.Form1.cmdUpdate.fontsize(7)
+gui.Form1.cmdUpdate.event(click,Update)
+gui.Form1.cmdUpdate.defaultvalue("")
+gui.Form1.cmdUpdate.controlgroup(0)
+gui.Form1.cmdPrint.create(button)
+gui.Form1.cmdPrint.caption("Print")
+gui.Form1.cmdPrint.visible(True)
+gui.Form1.cmdPrint.size(1125,345)
+gui.Form1.cmdPrint.zorder(0)
+gui.Form1.cmdPrint.position(200,8505)
+gui.Form1.cmdPrint.enabled(True)
+gui.Form1.cmdPrint.fontname("Arial")
+gui.Form1.cmdPrint.fontsize(7)
+gui.Form1.cmdPrint.event(click,Print)
+gui.Form1.cmdPrint.defaultvalue("")
+gui.Form1.cmdPrint.controlgroup(0)
+gui.Form1.txtSO.tabstop(True)
+gui.Form1.txtSO.tabindex(10)
+gui.Form1.txtCust.tabstop(True)
+gui.Form1.txtCust.tabindex(21)
+gui.Form1.txtPack.tabstop(True)
+gui.Form1.txtPack.tabindex(51)
+gui.Form1.txtDesc.tabstop(True)
+gui.Form1.txtDesc.tabindex(61)
+gui.Form1.txtPLName.tabstop(True)
+gui.Form1.txtPLName.tabindex(81)
+gui.Form1.txtDate.tabstop(True)
+gui.Form1.txtDate.tabindex(101)
+gui.Form1.txtSerial.tabstop(True)
+gui.Form1.txtSerial.tabindex(112)
+gui.Form1.txtHeat.tabstop(True)
+gui.Form1.txtHeat.tabindex(132)
+gui.Form1.txtQuantity.tabstop(True)
+gui.Form1.txtQuantity.tabindex(152)
+gui.Form1.txtUser1.tabstop(True)
+gui.Form1.txtUser1.tabindex(172)
+gui.Form1.txtUser2.tabstop(True)
+gui.Form1.txtUser2.tabindex(192)
+gui.Form1.txtUser3.tabstop(True)
+gui.Form1.txtUser3.tabindex(212)
+gui.Form1.txtUser4.tabstop(True)
+gui.Form1.txtUser4.tabindex(232)
+gui.Form1.mltxtInfo.tabstop(True)
+gui.Form1.mltxtInfo.tabindex(252)
+gui.Form1.cmdUpdate.tabstop(True)
+gui.Form1.cmdUpdate.tabindex(272)
+gui.Form1.cmdPrint.tabstop(True)
+gui.Form1.cmdPrint.tabindex(282)
+
+
+gui.Form2..create
+gui.Form2..caption("Certificate of Compliance")
+gui.Form2..size(3630,2415)
+gui.Form2..minx(0)
+gui.Form2..miny(0)
+gui.Form2..position(0,0)
+gui.Form2..alwaysontop(False)
+gui.Form2..fontname("Arial")
+gui.Form2..fontsize(7)
+gui.Form2..forecolor(0)
+gui.Form2..fontstyle(,,,,)
+gui.Form2..BackColor(-2147483633)
+gui.Form2..controlbox(True)
+gui.Form2..maxbutton(False)
+gui.Form2..minbutton(False)
+gui.Form2..mousepointer(1)
+gui.Form2..moveable(True)
+gui.Form2..sizeable(False)
+gui.Form2..ShowInTaskBar(False)
+gui.Form2..titlebar(True)
+gui.Form2.ckG235.create(checkbox)
+gui.Form2.ckG235.caption("G235")
+gui.Form2.ckG235.visible(True)
+gui.Form2.ckG235.size(1560,360)
+gui.Form2.ckG235.zorder(0)
+gui.Form2.ckG235.position(1890,195)
+gui.Form2.ckG235.enabled(True)
+gui.Form2.ckG235.alignment(0)
+gui.Form2.ckG235.fontname("Arial")
+gui.Form2.ckG235.fontsize(7)
+gui.Form2.ckG235.event(click,ckG235_Click)
+gui.Form2.ckG235.defaultvalue("")
+gui.Form2.ckG235.controlgroup(0)
+gui.Form2.ckG235M.create(checkbox)
+gui.Form2.ckG235M.caption("G235 Metric")
+gui.Form2.ckG235M.visible(True)
+gui.Form2.ckG235M.size(1560,360)
+gui.Form2.ckG235M.zorder(0)
+gui.Form2.ckG235M.position(1890,735)
+gui.Form2.ckG235M.enabled(True)
+gui.Form2.ckG235M.alignment(0)
+gui.Form2.ckG235M.fontname("Arial")
+gui.Form2.ckG235M.fontsize(7)
+gui.Form2.ckG235M.event(click,ckG235M_Click)
+gui.Form2.ckG235M.defaultvalue("")
+gui.Form2.ckG235M.controlgroup(0)
+gui.Form2.ckG165.create(checkbox)
+gui.Form2.ckG165.caption("G165")
+gui.Form2.ckG165.visible(True)
+gui.Form2.ckG165.size(1560,360)
+gui.Form2.ckG165.zorder(0)
+gui.Form2.ckG165.position(200,200)
+gui.Form2.ckG165.enabled(True)
+gui.Form2.ckG165.alignment(0)
+gui.Form2.ckG165.fontname("Arial")
+gui.Form2.ckG165.fontsize(7)
+gui.Form2.ckG165.event(click,ckG165_Click)
+gui.Form2.ckG165.defaultvalue("")
+gui.Form2.ckG165.controlgroup(0)
+gui.Form2.ckG165M.create(checkbox)
+gui.Form2.ckG165M.caption("G165 Metric")
+gui.Form2.ckG165M.visible(True)
+gui.Form2.ckG165M.size(1560,360)
+gui.Form2.ckG165M.zorder(0)
+gui.Form2.ckG165M.position(200,735)
+gui.Form2.ckG165M.enabled(True)
+gui.Form2.ckG165M.alignment(0)
+gui.Form2.ckG165M.fontname("Arial")
+gui.Form2.ckG165M.fontsize(7)
+gui.Form2.ckG165M.event(click,ckG165M_Click)
+gui.Form2.ckG165M.defaultvalue("")
+gui.Form2.ckG165M.controlgroup(0)
+gui.Form2.cmdSelect.create(button)
+gui.Form2.cmdSelect.caption("Select")
+gui.Form2.cmdSelect.visible(True)
+gui.Form2.cmdSelect.size(1125,345)
+gui.Form2.cmdSelect.zorder(0)
+gui.Form2.cmdSelect.position(200,1365)
+gui.Form2.cmdSelect.enabled(True)
+gui.Form2.cmdSelect.fontname("Arial")
+gui.Form2.cmdSelect.fontsize(7)
+gui.Form2.cmdSelect.event(click,Cert)
+gui.Form2.cmdSelect.defaultvalue("")
+gui.Form2.cmdSelect.controlgroup(0)
+gui.Form2.ckG235M.tabstop(True)
+gui.Form2.ckG235M.tabindex(1)
+gui.Form2.ckG165.tabstop(True)
+gui.Form2.ckG165.tabindex(11)
+gui.Form2.ckG165M.tabstop(True)
+gui.Form2.ckG165M.tabindex(21)
+gui.Form2.cmdSelect.tabstop(True)
+gui.Form2.cmdSelect.tabindex(31)
+
+
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+Variable.UDT.uOrder.Define("sOrderNO",String)
+Variable.UDT.uOrder.Define("dDateShip",Date,Date_Ship)
+Variable.UDT.uOrder.Define("sUser1",String,User_1)
+Variable.UDT.uOrder.Define("sUser2",String,User_2)
+Variable.UDT.uOrder.Define("sUser3",String,User_3)
+Variable.UDT.uOrder.Define("sPLName",String,Product_Line_Name)
+Variable.UDT.uOrder.Define("sCustName",String)
+Variable.UDT.uOrder.Define("sPackNo",String)
+Variable.UDT.uOrder.Define("sUser4",String,User_4)
+Variable.UDT.uOrder.Define("sDesc",String,Description)
+
+Variable.UDT.uOrder.Define("sHeat",String)
+Variable.UDT.uOrder.Define("sSerial",String)
+Variable.UDT.uOrder.Define("fQty",Float,Qty_Ordered)
+Variable.UDT.uOrder.Define("sPart",String,Part)
+Variable.UDT.uOrder.Define("sInfo",String)
+Variable.UDT.uOrder.Define("lBIRunID",Long)
+Variable.UDT.uOrder.Define("sPara1",String)
+Variable.UDT.uOrder.Define("sPara2",String)
+Variable.UDT.uOrder.Define("sOrderLine",String,Record_No)
+
+Variable.uGlobal.uOrder.Declare("uOrder")
+Variable.Global.iBIRunID.Declare(Long,0)
+Variable.Global.IBILogID.Declare(Long,0)
+Variable.Global.sCert.Declare(String)
+
+Variable.UDT.uOp.Define("sSeq",String,Seq)
+Variable.UDT.uOp.Define("sPart",String,Part)
+Variable.uGlobal.uOp.Declare("uOp")
+Variable.uGlobal.uPostOrder.Declare("uOrder")
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+F.Intrinsic.Control.SetErrorHandler("Main_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Local.sRet.Declare(String)
+V.Local.sTitles.Declare(String)
+V.Local.sSql.Declare(String)
+V.Local.sJob.Declare(String)
+V.Local.sPart.Declare(String)
+V.Local.sSeq.Declare(String)
+V.Local.sSuffix.Declare(String)
+V.Local.iWidths.Declare(Long)
+V.Local.iCount.Declare(Long)
+V.Local.iHisCount.Declare(Long)
+V.Local.iPost.Declare(Long)
+
+
+F.ODBC.Connection!conx.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)
+
+F.Global.BI.GetRunID(V.Global.iBIRunID)
+'Get Report Option from User
+
+F.Global.BI.StartLogging(V.Global.iBIRunID,-1,-1,"",V.Global.IBILogID)
+
+V.uGlobal.uPostOrder.Redim(-1,-1)
+
+F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+F.Intrinsic.String.Split("Order #*!*Customer*!*Customer Name","*!*",V.Local.sTitles)
+F.Intrinsic.String.Split("1000*!*1000*!*3000","*!*",V.Local.iWidths)
+V.Local.sSql.Set("select v_Order_Header.Order_NO, v_Order_Header.Customer, v_Customer_Master.Name_Customer  from v_ORDER_HEADER Left Join v_Customer_Master on v_Order_Header.Customer = v_Customer_Master.Customer Order by v_Order_Header.Order_No")
+F.Intrinsic.UI.Browser("Select a Sales Order","conx",V.Local.sSql,V.Local.sTitles,V.Local.iWidths,10000,10000,V.Local.sRet)
+
+F.Intrinsic.Control.If(V.Local.sRet,!=,"***CANCEL***")
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	'Check to see is parts are of Product Line DK or AC
+	'For testing used different pl
+
+	F.Intrinsic.String.Build("Select v_Order_Lines.Date_Ship, v_Order_Lines.User_1, v_Order_Lines.User_2, v_Order_Lines.User_3, v_Order_Lines.User_4, v_Order_Lines.Description, v_Order_Lines.Qty_Ordered, v_Product_Line.Product_Line, v_Product_Line.Product_Line_Name, v_Order_Lines.Part, Left (v_Order_Lines.Record_No, 3) as Record_No from v_Order_Lines Left Join v_Product_Line on v_Order_Lines.Product_Line = v_Product_Line.Product_Line where Order_No = '{0}' and Product_Line in ('DK', 'AC')",V.Local.sRet(0).Trim,V.Local.sSql)
+	F.ODBC.Connection!conx.OpenLocalRecordsetRO("rst",V.Local.sSql)
+	F.Intrinsic.Control.If(V.ODBC.conx!rst.EOF,=,False)
+		F.Intrinsic.Variable.LoadUDTFromRecordset("conx","rst","v.uGlobal.uOrder",False)
+		F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.uOrder!sCustName,V.Local.sRet(2).Trim)
+		F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.uOrder!sOrderNO,V.Local.sRet(0).Trim)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.UI.Msgbox("This Order does not have Parts with the Product Line of DK or AC!","Product Line")
+		F.Intrinsic.Control.CallSub(Form1_unload)
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conx!rst.Close
+
+'Need to make a change here.
+'********************************************************
+
+	F.Intrinsic.Control.For(V.Local.iCount,0,V.uGlobal.uOrder.UBound,1)
+		F.Intrinsic.String.Build("Select User_1, User_3, User_4,Customer_PO  from V_order_Header where Order_No = '{0}'",V.uGlobal.uOrder(v.Local.iCount)!sOrderNO,V.Local.sSql)
+		F.ODBC.Connection!conx.OpenLocalRecordsetRO("rstOrder",V.Local.sSql)
+		F.Intrinsic.Control.If(V.ODBC.conx!rstOrder.EOF,=,False)
+			V.uGlobal.uOrder(v.Local.iCount)!sUser1.Set(V.ODBC.conx!rstOrder.FieldVal!User_1)
+			V.uGlobal.uOrder(v.Local.iCount)!sUser3.Set(V.ODBC.conx!rstOrder.FieldVal!User_3)
+			V.uGlobal.uOrder(v.Local.iCount)!sUser4.Set(V.ODBC.conx!rstOrder.FieldVal!User_4)
+			V.uGlobal.uOrder(v.Local.iCount)!suser2.Set(V.ODBC.conx!rstOrder.FieldVal!Customer_PO)
+		F.Intrinsic.Control.EndIf
+		F.ODBC.conx!rstOrder.Close
+
+		F.Intrinsic.String.Build("Select Pck_No from Shipment_Lines where Order_no = '{0}' and Order_Desc = '{1}'",V.uGlobal.uOrder(v.Local.iCount)!sOrderNO,V.uGlobal.uOrder(v.Local.iCount)!sDesc,V.Local.sSql)
+		F.ODBC.Connection!conx.OpenLocalRecordsetRO("rst",V.Local.sSql)
+		F.Intrinsic.Control.If(V.ODBC.conx!rst.EOF,=,False)
+			V.uGlobal.uOrder(v.Local.iCount)!sPackNo.Set(V.ODBC.conx!rst.FieldValLTrim!Pck_No)
+		F.Intrinsic.Control.EndIf
+		F.ODBC.conx!rst.Close
+		'Get Serial and heat
+'		F.Intrinsic.String.Build("Select Heat, Serial_Number from Item_History where Part = '{0}' and Order_No = '{1}'",V.uGlobal.uOrder(v.Local.iCount)!sPart.Trim,V.uGlobal.uOrder(v.Local.iCount)!sOrderNO.Trim,V.Local.sSql)
+		'New SQL here.  Not sure if this is exactly right yet
+'		F.Intrinsic.String.Build("Select Job_Operations.Job, Job_Operations.Suffix, Job_Operations.Part, Item_History.Lot, Item_History.Heat, Item_History.Serial_Number From Job_Operations Left Join Job_Header on Job_Operations.Job = Job_Header.Job and Job_Operations.Suffix = Job_Header.suffix Left Join Item_History on Job_operations.Job = Item_History.job and Job_Operations.suffix = Item_History.Suffix and Job_Operations.Seq = Item_History.Sequence Where Job_Operations.LMO = 'M' and Seq < '900000' and Job_Header.Sales_Order = '{0}' and Job_Header.Sales_Order_Line = '{1}'",V.uGlobal.uOrder(v.Local.iCount)!sOrderNO,V.uGlobal.uOrder(v.Local.iCount)!sOrderLine,V.Local.sSql)
+
+		'Changing the query again so the right heat is returned.
+		F.Intrinsic.String.Build("Select Job, Suffix from Job_Header where Sales_Order = '{0}' and Sales_Order_Line = '{1}'",V.uGlobal.uOrder(v.Local.iCount)!sOrderNO,V.uGlobal.uOrder(v.Local.iCount)!sOrderLine,V.Local.sSql)
+		F.ODBC.Connection!conx.OpenLocalRecordsetRO("rstJob",V.Local.sSql)
+		F.Intrinsic.Control.If(V.ODBC.conx!rstJob.EOF,=,False)
+			V.Local.sJob.Set(V.ODBC.conx!rstJob.FieldValTrim!Job)
+			V.Local.sSuffix.Set(V.ODBC.conx!rstJob.FieldValTrim!Suffix)
+		F.Intrinsic.Control.EndIf
+		F.ODBC.conx!rstJob.Close
+
+		F.Intrinsic.String.Build("Select Part,Seq from Job_Detail where Job = '{0}' and Suffix = '{1}'  and LMO =  'M' ",V.Local.sJob,V.Local.sSuffix,V.Local.sSql)
+		F.ODBC.Connection!conx.OpenLocalRecordsetRO("rstOP",V.Local.sSql)
+		F.Intrinsic.Control.If(V.ODBC.conx!rstOP.EOF,=,False)
+			F.Intrinsic.Variable.LoadUDTFromRecordset("conx","rstOp","v.uGlobal.uOp",False)
+		F.Intrinsic.Control.EndIf
+		F.ODBC.conx!rstOP.Close
+
+
+		F.Intrinsic.String.Build("Select Heat, Serial_Number from Item_History where Part= '{0}' and Job = '{1}' and suffix = '{2}'  and Sequence = '{3}'",V.uGlobal.uOp(v.Local.iHisCount)!sPart,V.Local.sJob,V.Local.sSuffix,V.uGlobal.uOp(v.Local.iHisCount)!sSeq,V.Local.sSql)
+		F.ODBC.Connection!conx.OpenLocalRecordsetRO("rstHist",V.Local.sSql)
+		F.Intrinsic.Control.If(V.ODBC.conx!rstHist.EOF,=,False)
+			F.Intrinsic.Control.DoUntil(V.ODBC.conx!rstHist.EOF,=,True)
+
+			
+	'		F.Intrinsic.Control.For(V.Local.iHisCount,V.uGlobal.uOp.LBound,V.uGlobal.uOp.UBound,1)
+				'copy to new udt
+				F.Intrinsic.Math.Add(V.uGlobal.uPostOrder.UBound,1,V.Local.iPost)
+				F.Intrinsic.Control.If(V.uGlobal.uPostOrder.UBound,=,-1)
+					V.uGlobal.uPostOrder.Redim(0,0)
+				F.Intrinsic.Control.Else
+					V.uGlobal.uPostOrder.RedimPreserve(0,V.Local.iPost)
+				F.Intrinsic.Control.EndIf
+
+
+	'			F.Intrinsic.String.Build("Select Heat, Serial_Number from Item_History where Part= '{0}' and Job = '{1}' and suffix = '{2}'  and Sequence = '{3}'",V.uGlobal.uOp(v.Local.iHisCount)!sPart,V.Local.sJob,V.Local.sSuffix,V.uGlobal.uOp(v.Local.iHisCount)!sSeq,V.Local.sSql)
+	'			F.ODBC.Connection!conx.OpenLocalRecordsetRO("rstHist",V.Local.sSql)
+	'			F.Intrinsic.Control.If(V.ODBC.conx!rstHist.EOF,=,False)
+					F.Intrinsic.Control.If(V.ODBC.conx!rstHist.FieldValTrim!Heat,!=,"")
+						V.uGlobal.uOrder(v.Local.iCount)!sHeat.Set(V.ODBC.conx!rstHist.FieldValTrim!Heat)
+					F.Intrinsic.Control.Else
+						V.uGlobal.uOrder(v.Local.iCount)!sHeat.Set("")
+					F.Intrinsic.Control.EndIf
+
+					F.Intrinsic.Control.If(V.ODBC.conx!rstHist.FieldValTrim!Serial_Number,!=,"")
+						V.uGlobal.uOrder(v.Local.iCount)!sSerial.Set(V.ODBC.conx!rstHist.FieldVal!Serial_Number)
+					F.Intrinsic.Control.Else
+						V.uGlobal.uOrder(v.Local.iCount)!sSerial.Set("")
+					F.Intrinsic.Control.EndIf
+					
+					V.uGlobal.uPostOrder(v.Local.iPost)!sHeat.Set(V.uGlobal.uOrder(v.Local.iCount)!sHeat)
+					V.uGlobal.uPostOrder(v.Local.iPost)!sSerial.Set(V.uGlobal.uOrder(v.Local.iCount)!sSerial)
+
+				
+			
+				
+				V.uGlobal.uPostOrder(v.Local.iPost)!dDateShip.Set(V.uGlobal.uOrder(v.Local.iCount)!dDateShip)
+				V.uGlobal.uPostOrder(v.Local.iPost)!fQty.Set(V.uGlobal.uOrder(v.Local.iCount)!fQty)
+				V.uGlobal.uPostOrder(v.Local.iPost)!lBIRunID.Set(V.uGlobal.uOrder(v.Local.iCount)!lBIRunID)
+				V.uGlobal.uPostOrder(v.Local.iPost)!sCustName.Set(V.uGlobal.uOrder(v.Local.iCount)!sCustName)
+				V.uGlobal.uPostOrder(v.Local.iPost)!sDesc.Set(V.uGlobal.uOrder(v.Local.iCount)!sDesc.Trim)
+	''			V.uGlobal.uPostOrder(v.Local.iPost)!sHeat.Set(V.Odbc.conx!rstHist.FieldVal!Heat)
+				V.uGlobal.uPostOrder(v.Local.iPost)!sInfo.Set(V.uGlobal.uOrder(v.Local.iCount)!sInfo)
+				V.uGlobal.uPostOrder(v.Local.iPost)!sOrderLine.Set(V.uGlobal.uOrder(v.Local.icount)!sOrderLine)
+				V.uGlobal.uPostOrder(v.Local.iPost)!sOrderNO.Set(V.uGlobal.uOrder(v.Local.iCount)!sOrderNO)
+				V.uGlobal.uPostOrder(v.Local.iPost)!sPackNo.Set(V.uGlobal.uOrder(v.Local.iCount)!sPackNo)
+				V.uGlobal.uPostOrder(v.Local.iPost)!sPara1.Set(V.uGlobal.uOrder(v.Local.iCount)!sPara1)
+				V.uGlobal.uPostOrder(v.Local.iPost)!sPara2.Set(V.uGlobal.uOrder(v.Local.iCount)!sPara2)
+				V.uGlobal.uPostOrder(v.Local.iPost)!sPart.Set(V.uGlobal.uOrder(v.Local.iCount)!sPart)
+				V.uGlobal.uPostOrder(v.Local.iPost)!sPLName.Set(V.uGlobal.uOrder(v.Local.icount)!sPLName)
+	'			V.uGlobal.uPostOrder(v.Local.iPost)!sSerial.Set(V.ODBC.conx!rstHist.FieldVal!Serial_Number)
+				V.uGlobal.uPostOrder(v.Local.iPost)!sUser1.Set(V.uGlobal.uOrder(v.Local.iCount)!sUser1)
+				V.uGlobal.uPostOrder(v.Local.iPost)!sUser2.Set(V.uGlobal.uOrder(v.Local.iCount)!sUser2)
+				V.uGlobal.uPostOrder(v.Local.iPost)!sUser3.Set(V.uGlobal.uOrder(v.Local.iCount)!sUser3)
+				V.uGlobal.uPostOrder(V.Local.iPost)!sUser4.set(V.uGlobal.uOrder(v.Local.iCount)!sUser4)
+				F.ODBC.conx!rstHist.MoveNext
+			F.Intrinsic.Control.Loop
+		F.Intrinsic.Control.Else
+				F.Intrinsic.Math.Add(V.uGlobal.uPostOrder.UBound,1,V.Local.iPost)
+				F.Intrinsic.Control.If(V.uGlobal.uPostOrder.UBound,=,-1)
+					V.uGlobal.uPostOrder.Redim(0,0)
+				F.Intrinsic.Control.Else
+					V.uGlobal.uPostOrder.RedimPreserve(0,V.Local.iPost)
+				F.Intrinsic.Control.EndIf
+			V.uGlobal.uPostOrder(v.Local.iPost)!sHeat.Set(V.uGlobal.uOrder(v.Local.iCount)!sHeat)
+			V.uGlobal.uPostOrder(v.Local.iPost)!sSerial.Set(V.uGlobal.uOrder(v.Local.iCount)!sSerial)
+			V.uGlobal.uPostOrder(v.Local.iPost)!dDateShip.Set(V.uGlobal.uOrder(v.Local.iCount)!dDateShip)
+			V.uGlobal.uPostOrder(v.Local.iPost)!fQty.Set(V.uGlobal.uOrder(v.Local.iCount)!fQty)
+			V.uGlobal.uPostOrder(v.Local.iPost)!lBIRunID.Set(V.uGlobal.uOrder(v.Local.iCount)!lBIRunID)
+			V.uGlobal.uPostOrder(v.Local.iPost)!sCustName.Set(V.uGlobal.uOrder(v.Local.iCount)!sCustName)
+			V.uGlobal.uPostOrder(v.Local.iPost)!sDesc.Set(V.uGlobal.uOrder(v.Local.iCount)!sDesc.Trim)
+			V.uGlobal.uPostOrder(v.Local.iPost)!sInfo.Set(V.uGlobal.uOrder(v.Local.iCount)!sInfo)
+			V.uGlobal.uPostOrder(v.Local.iPost)!sOrderLine.Set(V.uGlobal.uOrder(v.Local.icount)!sOrderLine)
+			V.uGlobal.uPostOrder(v.Local.iPost)!sOrderNO.Set(V.uGlobal.uOrder(v.Local.iCount)!sOrderNO)
+			V.uGlobal.uPostOrder(v.Local.iPost)!sPackNo.Set(V.uGlobal.uOrder(v.Local.iCount)!sPackNo)
+			V.uGlobal.uPostOrder(v.Local.iPost)!sPara1.Set(V.uGlobal.uOrder(v.Local.iCount)!sPara1)
+			V.uGlobal.uPostOrder(v.Local.iPost)!sPara2.Set(V.uGlobal.uOrder(v.Local.iCount)!sPara2)
+			V.uGlobal.uPostOrder(v.Local.iPost)!sPart.Set(V.uGlobal.uOrder(v.Local.iCount)!sPart)
+			V.uGlobal.uPostOrder(v.Local.iPost)!sPLName.Set(V.uGlobal.uOrder(v.Local.icount)!sPLName)
+			V.uGlobal.uPostOrder(v.Local.iPost)!sUser1.Set(V.uGlobal.uOrder(v.Local.iCount)!sUser1)
+			V.uGlobal.uPostOrder(v.Local.iPost)!sUser2.Set(V.uGlobal.uOrder(v.Local.iCount)!sUser2)
+			V.uGlobal.uPostOrder(v.Local.iPost)!sUser3.Set(V.uGlobal.uOrder(v.Local.iCount)!sUser3)
+			V.uGlobal.uPostOrder(V.Local.iPost)!sUser4.set(V.uGlobal.uOrder(v.Local.iCount)!sUser4)
+		F.Intrinsic.Control.EndIf
+		F.ODBC.conx!rstHist.Close
+
+'		'Now get job op part
+'		F.Intrinsic.String.Build("Select Item_History.Heat, Item_History.Serial_Number From Item_History Left Join Item_History on Job_operations.Job = Item_History.job and Job_Operations.suffix = Item_History.Suffix and Job_Operations.Seq = Item_History.Sequence Where Job_Operations.LMO = 'M' and Job_Operations.Seq < '900000' and Item_History.job = '{0}' and Item_History.suffix = '{1}'",V.Local.sJob,V.Local.sSuffix,V.Local.sSql)
+'		F.ODBC.Connection!conx.OpenLocalRecordsetRO("rst",V.Local.sSql)
+'		F.Intrinsic.Control.If(V.ODBC.conx!rst.EOF,=,False)
+'			V.uGlobal.uOrder(v.Local.iCount)!sHeat.Set(V.ODBC.conx!rst.FieldValTrim!Heat)
+'			V.uGlobal.uOrder(v.Local.iCount)!sSerial.Set(V.ODBC.conx!rst.FieldValTrim!Serial_Number)
+'		F.Intrinsic.Control.EndIf
+'		F.ODBC.conx!rst.Close
+	F.Intrinsic.Control.Next(V.Local.iCount)
+	
+'********************************************************
+	F.Intrinsic.Control.CallSub(Buildstyle)
+	Gui.Form1.txtCust.Text(V.Local.sRet(2))
+	Gui.Form1.txtSO.Text(V.Local.sRet(0))
+	Gui.Form1.txtPack.Text(V.uGlobal.uOrder(0)!sPackNo)
+	Gui.Form1.txtUser1.Text(V.uGlobal.uOrder(0)!sUser1)
+	Gui.Form1.txtUser2.Text(V.uGlobal.uOrder(0)!sUser2)
+	Gui.Form1.txtUser3.Text(V.uGlobal.uOrder(0)!sUser3)
+	Gui.Form1.txtUser4.Text(V.uGlobal.uOrder(0)!sUser4)
+	Gui.Form1.txtDate.Text(V.uGlobal.uOrder(0)!dDateShip)
+
+
+'	gui.Form1.gsfgOrder.Rows(1)
+	F.Intrinsic.Variable.UDTMultiFlag(V.uGlobal.uPostOrder!sDesc,"")
+'	F.Intrinsic.Variable.UDTMultiFlagDuplicates(V.uGlobal.uPostOrder!sPart,V.uGlobal.uPostOrder!sSerial,V.uGlobal.uPostOrder!sHeat)
+	F.Intrinsic.Variable.UDTDeleteFlagged(V.uGlobal.uPostOrder)
+	F.Intrinsic.Variable.UDTCopy(V.uGlobal.uPostOrder,V.uGlobal.uOrder,False)
+
+	Gui.Form1.gsfgOrder.LoadFromUDT("v.uGlobal.uPostOrder","sDesc::0*!*sPLName::1*!*sSerial::2*!*sHeat::3*!*fQty::5",2)
+
+	Gui.Form1..Show
+F.Intrinsic.Control.Else
+	F.Intrinsic.Control.CallSub(Form1_unload)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Main_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_SIP_3063_CertComp.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Main.End
+
+Program.Sub.Form1_Unload.Start
+F.Intrinsic.Control.SetErrorHandler("Form1_Unload_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.ODBC.Connection!conx.Close
+
+F.Intrinsic.Control.End
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Form1_Unload_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_SIP_3063_CertComp.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Form1_Unload.End
+
+Program.Sub.Update.Start
+F.Intrinsic.Control.SetErrorHandler("Update_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Local.iRows.Declare(Long)
+V.Local.iOrd.Declare(Long)
+
+
+'Save back to grid
+V.Local.iRows.Set(V.Screen.Form1!gsfgOrder.Rows)
+F.Intrinsic.Math.Add(V.Local.iRows,1,V.Local.iRows)
+Gui.Form1.gsfgOrder.Rows(V.Local.iRows)
+F.Intrinsic.Math.Sub(V.Local.iRows,1,V.Local.iRows)
+Gui.Form1.gsfgOrder.TextMatrix(0,V.Local.iRows,V.Screen.Form1!txtDesc.Text)
+Gui.Form1.gsfgOrder.TextMatrix(1,V.Local.iRows,V.Screen.Form1!txtPLName.Text)
+Gui.Form1.gsfgOrder.TextMatrix(2,V.Local.iRows,V.Screen.Form1!txtSerial.Text)
+Gui.Form1.gsfgOrder.TextMatrix(3,V.Local.iRows,V.Screen.Form1!txtHeat.Text)
+Gui.Form1.gsfgOrder.TextMatrix(4,V.Local.iRows,V.Screen.Form1!mltxtInfo.Text)
+Gui.Form1.gsfgOrder.TextMatrix(5,V.Local.iRows,V.Screen.Form1!txtQuantity.Text)
+Gui.Form1.gsfgOrder.ApplyStyle(V.Local.iRows,2)
+'Add to UDT
+F.Intrinsic.Math.Add(V.uGlobal.uOrder.UBound,1,V.Local.iOrd)
+V.uGlobal.uPostOrder.RedimPreserve(0,V.Local.iOrd)
+
+V.uGlobal.uPostOrder(v.Local.iOrd)!sOrderNO.Set(V.Screen.Form1!txtSO.Text)
+V.uGlobal.uPostOrder(v.Local.iOrd)!dDateShip.Set(V.Screen.Form1!txtDate.Text)
+V.uGlobal.uPostOrder(v.Local.iOrd)!sUser1.Set(V.Screen.Form1!txtUser1.Text)
+V.uGlobal.uPostOrder(v.Local.iOrd)!sUser2.Set(V.Screen.Form1!txtUser2.Text)
+V.uGlobal.uPostOrder(v.Local.iOrd)!sUser3.Set(V.Screen.Form1!txtUser3.Text)
+V.uGlobal.uPostOrder(v.Local.iOrd)!sPLName.Set(V.Screen.Form1!txtPLName.Text)
+V.uGlobal.uPostOrder(v.Local.iOrd)!sCustName.Set(V.Screen.Form1!txtCust.Text)
+V.uGlobal.uPostOrder(v.Local.iOrd)!sPackNo.Set(V.Screen.Form1!txtPack.Text)
+V.uGlobal.uPostOrder(v.Local.iOrd)!sUser4.Set(V.Screen.Form1!txtUser4.Text)
+V.uGlobal.uPostOrder(v.Local.iOrd)!sDesc.Set(V.Screen.Form1!txtDesc.Text)
+V.uGlobal.uPostOrder(v.Local.iOrd)!sHeat.Set(V.Screen.Form1!txtHeat.Text)
+V.uGlobal.uPostOrder(v.Local.iOrd)!sSerial.Set(V.Screen.Form1!txtSerial.Text)
+V.uGlobal.uPostOrder(v.Local.iOrd)!fQty.Set(V.Screen.Form1!txtQuantity.Text)
+V.uGlobal.uPostOrder(v.Local.iOrd)!sInfo.Set(V.Screen.Form1!mltxtInfo.Text)
+
+
+F.Intrinsic.Variable.UDTMultiQuickSort(V.uGlobal.uPostOrder!sPLName,True,V.uGlobal.uPostOrder!sDesc,True)
+
+Gui.Form1.gsfgOrder.Visible(False)
+Gui.Form1.gsfgOrder.Rows(1)
+F.Intrinsic.Variable.UDTMultiFlag(V.uGlobal.uPostOrder!sDesc,"")
+F.Intrinsic.Variable.UDTDeleteFlagged(V.uGlobal.uPostOrder)
+
+Gui.Form1.gsfgOrder.LoadFromUDT("v.uGlobal.uPostOrder","sDesc::0*!*sPLName::1*!*sSerial::2*!*sHeat::3*!*fQty::5",2)
+Gui.Form1.gsfgOrder.Visible(True)
+
+Gui.Form1..ClearGroup(1)
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Update_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_SIP_3063_CertComp.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Update.End
+
+Program.Sub.Print.Start
+F.Intrinsic.Control.SetErrorHandler("Print_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.dDate.Declare(Date)
+
+'Save to table and print
+Gui.Form1..Visible(False)
+F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.uPostOrder!dDateShip,V.Screen.Form1!txtDate.Text)
+
+Gui.Form2..Show
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Print_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_SIP_3063_CertComp.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Print.End
+
+Program.Sub.Cert.Start
+F.Intrinsic.Control.SetErrorHandler("Cert_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Local.sSql.Declare(String)
+V.Local.sParam.Declare(String)
+V.Local.sVal.Declare(String)
+
+Gui.Form2..Visible(False)
+
+F.Intrinsic.Control.SelectCase(V.Global.sCert)
+
+	F.Intrinsic.Control.Case("G165")
+		F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.uPostOrder!sPara1,"G165")
+		F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.uPostOrder!sPara2,"G165")
+	F.Intrinsic.Control.Case("G165M")
+		F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.uPostOrder!sPara1,"G165M")
+		F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.uPostOrder!sPara2,"G165M")
+	F.Intrinsic.Control.Case("G235")
+		F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.uPostOrder!sPara1,"G235")
+		F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.uPostOrder!sPara2,"G235")
+	F.Intrinsic.Control.Case("G235M")
+		F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.uPostOrder!sPara1,"G235M")
+		F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.uPostOrder!sPara2,"G235M")
+F.Intrinsic.Control.EndSelect
+
+F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.uPostOrder!lBIRunID,V.Global.iBIRunID)
+F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uPostOrder!dDateShip,"ShipDate")
+F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uPostOrder!fQty,"Qty")
+F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uPostOrder!lBIRunID,"BIRunID")
+F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uPostOrder!sCustName,"CustName")
+F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uPostOrder!sDesc,"PartDesc")
+F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uPostOrder!sHeat,"Heat")
+F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uPostOrder!sInfo,"AddInfor")
+F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uPostOrder!sOrderNO,"OrderNO")
+F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uPostOrder!sPackNo,"PackNo")
+F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uPostOrder!sPara1,"Para1")
+F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uPostOrder!sPara2,"Para2")
+F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uPostOrder!sPart,"")
+F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uPostOrder!sPLName,"PLName")
+F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uPostOrder!sSerial,"Serial")
+F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uPostOrder!sUser1,"User1")
+F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uPostOrder!sUser2,"User2")
+F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uPostOrder!sUser3,"User3")
+F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uPostOrder!sUser4,"User4")
+F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uPostOrder!sOrderLine,"")
+
+V.Local.sSql.Set("Select * From GCG_SIP_3063_CertRpt")
+F.ODBC.Connection!conx.OpenLocalRecordsetRW("rst",V.Local.sSql)
+F.Intrinsic.Variable.SaveUDTToRecordSet("conx","rst","v.uGlobal.uPostOrder")
+F.ODBC.conx!rst.Close
+
+'need to stop logging and print the report
+F.Global.BI.StopLogging(V.Global.IBILogID)
+V.Local.sParam.Set("BIRunID")
+V.Local.sVal.Set(V.Global.iBIRunID)
+
+F.Global.BI.RunReportPreProcessor(V.Global.iBIRunID,V.Global.iBILogID,V.Local.sParam,V.Local.sVal,"",-1,True,"",-1,"",-1,"","",V.Global.iBIRunID)
+
+F.Intrinsic.Control.CallSub(Form1_unload)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Cert_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_SIP_3063_CertComp.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Cert.End
+
+Program.Sub.gsfgOrder_MouseDown.Start
+F.Intrinsic.Control.SetErrorHandler("gsfgOrder_MouseDown_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Local.sRow.Declare(String)
+V.Local.iOrd.Declare(Long)
+
+Gui.Form1.gsfgOrder.ReadRow(V.Args.MouseRow,V.Local.sRow)
+F.Intrinsic.String.Split(V.Local.sRow,"*!*",V.Local.sRow)
+Gui.Form1.txtDesc.Text(V.Local.sRow(0).Trim)
+Gui.Form1.txtPLName.Text(V.Local.sRow(1).Trim)
+Gui.Form1.txtSerial.Text(V.Local.sRow(2).Trim)
+Gui.Form1.txtHeat.Text(V.Local.sRow(3).Trim)
+Gui.Form1.mltxtInfo.Text(V.Local.sRow(4).Trim)
+Gui.Form1.txtQuantity.Text(V.Local.sRow(5).Trim)
+
+Gui.Form1.gsfgOrder.DeleteRow(V.Args.MouseRow)
+
+'Delete from UDT
+F.Intrinsic.Math.Sub(V.Args.MouseRow,1,V.Local.iOrd)
+F.Intrinsic.Variable.UDTFlagOrdinal(V.uGlobal.uPostOrder,True,V.Local.iOrd)
+F.Intrinsic.Variable.UDTDeleteFlagged(V.uGlobal.uPostOrder)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("gsfgOrder_MouseDown_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_SIP_3063_CertComp.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.gsfgOrder_MouseDown.End
+
+Program.Sub.ckG165_Click.Start
+F.Intrinsic.Control.SetErrorHandler("ckG165_Click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.If(V.Screen.Form2!ckG165.Value,=,1)
+	Gui.Form2.ckG165M.Value(0)
+	Gui.Form2.ckG235.Value(0)
+	Gui.Form2.ckG235M.Value(0)
+	V.Global.sCert.Set("G165")
+
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("ckG165_Click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_SIP_3063_CertComp.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.ckG165_Click.End
+
+Program.Sub.ckG235_Click.Start
+F.Intrinsic.Control.SetErrorHandler("ckG235_Click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.If(V.Screen.Form2!ckG235.Value,=,1)
+	Gui.Form2.ckG165.Value(0)
+	Gui.Form2.ckG165M.Value(0)
+	Gui.Form2.ckG235M.Value(0)
+	v.Global.sCert.Set("G235")
+
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("ckG235_Click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_SIP_3063_CertComp.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.ckG235_Click.End
+
+Program.Sub.ckG165M_Click.Start
+F.Intrinsic.Control.SetErrorHandler("ckG165M_Click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.If(V.Screen.Form2!ckG165M.Value,=,1)
+	Gui.Form2.ckG165.Value(0)
+	Gui.Form2.ckG235.Value(0)
+	Gui.Form2.ckG235M.Value(0)
+	v.Global.sCert.Set("G165M")
+
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("ckG165M_Click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_SIP_3063_CertComp.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.ckG165M_Click.End
+
+Program.Sub.ckG235M_Click.Start
+F.Intrinsic.Control.SetErrorHandler("ckG235M_Click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.If(V.Screen.Form2!ckG235M.Value,=,1)
+	Gui.Form2.ckG165.Value(0)
+	Gui.Form2.ckG165M.Value(0)
+	Gui.Form2.ckG235.Value(0)
+	V.Global.sCert.Set("G235M")
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("ckG235M_Click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_SIP_3063_CertComp.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.ckG235M_Click.End
+
+Program.Sub.BuildStyle.Start
+F.Intrinsic.Control.SetErrorHandler("BuildStyle_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+
+Gui.Form1.gsfgOrder.Cols(6)
+Gui.Form1.gsfgOrder.Rows(2)
+
+Gui.Form1.gsfgOrder.SetColumnPercentages(".20:.20:.20:.10:.20:.10")
+
+Gui.Form1.gsfgOrder.BuildStyle(1,0,"Type","Locked",True)
+Gui.Form1.gsfgOrder.BuildStyle(1,0,"Format","Alignment",4)
+
+Gui.Form1.gsfgOrder.BuildStyle(2,0,"Type","Locked",True)
+Gui.Form1.gsfgOrder.BuildStyle(2,0,"Format","Alignment",2)
+
+Gui.Form1.gsfgOrder.BuildStyle(1,1,"Type","Locked",True)
+Gui.Form1.gsfgOrder.BuildStyle(1,1,"Format","Alignment",4)
+
+Gui.Form1.gsfgOrder.BuildStyle(2,1,"Type","Locked",True)
+Gui.Form1.gsfgOrder.BuildStyle(2,1,"Format","Alignment",2)
+
+Gui.Form1.gsfgOrder.BuildStyle(1,2,"Type","Locked",True)
+Gui.Form1.gsfgOrder.BuildStyle(1,2,"Format","Alignment",4)
+
+Gui.Form1.gsfgOrder.BuildStyle(2,2,"Type","Locked",True)
+Gui.Form1.gsfgOrder.BuildStyle(2,2,"Format","Alignment",6)
+
+Gui.Form1.gsfgOrder.BuildStyle(1,3,"Type","Locked",True)
+Gui.Form1.gsfgOrder.BuildStyle(1,3,"Format","Alignment",4)
+
+Gui.Form1.gsfgOrder.BuildStyle(2,3,"Type","Locked",True)
+Gui.Form1.gsfgOrder.BuildStyle(2,3,"Format","Alignment",6)
+
+Gui.Form1.gsfgOrder.BuildStyle(1,4,"Type","Locked",True)
+Gui.Form1.gsfgOrder.BuildStyle(1,4,"Format","Alignment",4)
+
+Gui.Form1.gsfgOrder.BuildStyle(2,4,"Type","Locked",True)
+Gui.Form1.gsfgOrder.BuildStyle(2,4,"Format","Alignment",2)
+
+Gui.Form1.gsfgOrder.BuildStyle(1,5,"Type","Locked",True)
+Gui.Form1.gsfgOrder.BuildStyle(1,5,"Format","Alignment",4)
+
+Gui.Form1.gsfgOrder.BuildStyle(2,5,"Type","Locked",True)
+Gui.Form1.gsfgOrder.BuildStyle(2,5,"Format","Alignment",6)
+Gui.Form1.gsfgOrder.BuildStyle(2,5,"Format","Mask","#.00")
+
+Gui.Form1.gsfgOrder.TextMatrix(0,0,"Part Description")
+Gui.Form1.gsfgOrder.TextMatrix(1,0,"PL Name")
+Gui.Form1.gsfgOrder.TextMatrix(2,0,"Serial Number")
+Gui.Form1.gsfgOrder.TextMatrix(3,0,"Heat")
+Gui.Form1.gsfgOrder.TextMatrix(4,0,"Additional Info")
+Gui.Form1.gsfgOrder.TextMatrix(5,0,"Quantity")
+
+Gui.Form1.gsfgOrder.ApplyStyle(0,1)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("BuildStyle_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_SIP_3063_CertComp.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.BuildStyle.End
+
+Program.Sub.Comments.Start
+${$0$}$GCG_SIP_7000_CertComp$}$SKT$}$11/23/2015 12:05:17 PM
+${$3$}$0$}$$}$0$}$-1$}$$}$12:00:00 AM$}$This will be a custom GAB Script that will allow the user to select a Sales Order. If the Sales Order has parts with a Product Line of "DK" or "AC" then a Certificate of Compliance will print. The user will be required to select the format of the Crystal report. There will be 4 options to choose from. Once the selection is made then the data for the certificate will be gathered and display on a custom screen. At this point the user will be able to make any changes that might be needed prior to printing. Once all changes have been made the report will print.
+
+Program.Sub.Comments.End
+
